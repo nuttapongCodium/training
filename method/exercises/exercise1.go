@@ -16,6 +16,4 @@ func main() {
 
 	// Display the batting average for each player.
 
-	// Why did I not choose this form?
-
 }
