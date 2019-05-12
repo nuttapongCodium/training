@@ -10,7 +10,7 @@
  - Simplicity
 
 ### 2. Install Go
- - ทดสอบ print ข้อความ Hello world 	
+ - หลังติดตั้งทดสอบด้วยการ print ข้อความ Hello world 	
 
 ### 3. Variable
  - Zero value
