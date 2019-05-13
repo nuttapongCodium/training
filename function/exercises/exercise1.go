@@ -6,18 +6,37 @@
 // the error value.
 package main
 
+// height rooms status_eia
 // Add imports.
+import "fmt"
 
-// user represents a user in the system.
+type condo struct {
+	Name    string
+	Floors  int
+	Rooms   int
+	PassEIA bool
+}
 
-// newUser creates and returns pointers of user type values.
+func (condo_ *condo) validateEIA() {
+	condo_.PassEIA = true
+}
+
+func (condo_ *condo) roomsPerFloor() float32 {
+	return float32(condo_.Rooms) / float32(condo_.Floors)
+}
 
 func main() {
+	condo1 := condo{
+		Name:    "Condo1",
+		Floors:  10,
+		Rooms:   200,
+		PassEIA: false,
+	}
 
-	// Create a value of type user.
+	fmt.Println(condo1)
 
-	// Display the value.
+	condo1.validateEIA()
+	fmt.Println(condo1)
 
-	// Call the function and just check the error on the return.
-
+	fmt.Println(condo1.roomsPerFloor())
 }

@@ -7,7 +7,8 @@ type user struct {
 }
 
 func main() {
-	users := make(map[string]user)
+	// users := make(map[string]user)
+	users := map[string]user{}
 
 	users["1150"] = user{
 		name: "Sander",
